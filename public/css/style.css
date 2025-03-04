@@ -10,7 +10,6 @@ body {
     color: #e0e0e0;
     line-height: 1.6;
     text-align: center;
-    /* padding: 20px; */
 }
   
 /* Navigation Bar */
@@ -20,7 +19,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-radius: 10px; */
     box-shadow: 0 5px 10px rgba(0, 255, 255, 0.2);
 }
   
@@ -41,7 +39,6 @@ main {
     padding: 2rem;
     max-width: 900px;
     margin: 20px auto;
-    /* box-shadow: 0 4px 8px rgba(0, 255, 255, 0.1); */
 }
 
 h2{
@@ -107,16 +104,6 @@ button:active {
     transform: scale(0.95);
 }
   
-/* Button for Delete */
-/* button[style="background-color: red;"] {
-    background: #e74c3c;
-    color: #e0e0e0;
-}
-  
-button[style="background-color: red;"]:hover {
-    background: #c0392b;
-} */
-  
 /* Tables */
 .admin-table {
     width: 100%;
@@ -143,8 +130,8 @@ button[style="background-color: red;"]:hover {
     background: #262626;
 }
   
-/* Donation Cards */
-.donation-card {
+/* Saving Cards */
+.saving-card {
     border: 1px solid #333;
     padding: 15px;
     margin-bottom: 30px;
@@ -153,12 +140,12 @@ button[style="background-color: red;"]:hover {
     box-shadow: 0 5px 10px rgba(0, 255, 255, 0.2);
 }
   
-.donation-card h3 {
+.saving-card h3 {
     margin-bottom: 5px;
     color: #00e5ff;
 }
   
-.donation-card small {
+.saving-card small {
     color: #999;
 }
   
