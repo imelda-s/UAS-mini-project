@@ -30,7 +30,7 @@
             <p>No donations yet.</p>
         <?php else: ?>
             <?php foreach($savings as $saving): ?>
-                <div class="donation-card">
+                <div class="saving-card">
                     <h3><?php echo htmlspecialchars($saving['name']); ?></h3>
                     <p>Amount: Rp<?php echo number_format($saving['amount']); ?></p>
                     <p>Message: <?php echo htmlspecialchars($saving['message']); ?></p>
