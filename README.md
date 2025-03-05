@@ -27,7 +27,7 @@ Setelah database siap, Anda bisa menjalankan proyek ini secara lokal dengan lang
 - Pindahkan atau ekstrak folder proyek ke dalam folder `htdocs`. Misalnya, jika folder proyek bernama `saving_project`, maka path lengkapnya akan menjadi:
 ```C:\xampp\htdocs\saving_project\```
 3. Konfigurasi Koneksi Database
-- Buka file config/database.php dalam proyek.
+- Buka file `config/database.php` dalam proyek.
 - Pastikan pengaturan database sesuai dengan database yang telah Anda buat:
 ```php
 define('DB_HOST', 'localhost');
