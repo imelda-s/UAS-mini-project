@@ -43,19 +43,19 @@ define('DB_PASS', ''); // Default password kosong jika belum diubah
 - Tekan Enter, dan proyek akan berjalan.
 
 ## 🔥 Fitur Utama
-✅ Autentikasi Pengguna
+1. Autentikasi Pengguna
 - Pengguna dapat melakukan registrasi dan login.
 - Sistem memastikan hanya pengguna yang telah login yang bisa mengakses fitur tertentu.
-✅ Manajemen Tabungan
+2. Manajemen Tabungan
 - Pengguna dapat menyimpan uang dengan jumlah tertentu.
 - Admin dapat melihat semua tabungan, sedangkan pengguna hanya bisa melihat tabungannya sendiri.
-✅ Manajemen Pengguna
+3. Manajemen Pengguna
 - Admin dapat mengubah peran pengguna (misalnya dari user menjadi admin).
 - Admin dapat menghapus pengguna dari sistem.
-✅ Sistem Routing Dinamis
+4. Sistem Routing Dinamis
 - Menggunakan Router untuk menangani navigasi halaman.
 - Mendukung URL rewriting menggunakan .htaccess agar URL lebih bersih dan mudah diakses.
-✅ Middleware untuk Keamanan
+5. Middleware untuk Keamanan
 - Menggunakan AuthMiddleware untuk memastikan hanya pengguna yang berhak dapat mengakses halaman tertentu.
 - Admin memiliki hak akses khusus untuk fitur manajemen pengguna.
 
