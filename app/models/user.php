@@ -66,6 +66,5 @@ class User {
         $stmt->bindParam(':user_id', $user_id);
         
         return $stmt->execute();
-    }
-    
+    }    
 }

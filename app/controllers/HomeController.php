@@ -15,13 +15,11 @@ class HomeController {
         AuthMiddleware::isAuthenticated();
     
         $isAdmin = $_SESSION['user_role'] === 'admin';
-    
-        if ($isAdmin) {
-            $savings = $this->savingModel->getAll(); // Admin bisa melihat semua donasi
-        } else {
-            $user_id = $_SESSION['user_id'];
-            $savings = $this->savingModel->getSavingsByUser($user_id); // User hanya bisa melihat tabungannya sendiri
-        }
+        $user_id = $_SESSION['user_id'];
+
+        $savings = $this->savingModel->getSavingsByUser($user_id); // User hanya bisa melihat tabungannya sendiri
+
+        $totalDonations = $this->savingModel->getTotalSavingsByUser($user_id);
     
         require_once 'app/views/home.php';
     }
@@ -72,5 +70,4 @@ class HomeController {
             }
         }
     }
-    
 }

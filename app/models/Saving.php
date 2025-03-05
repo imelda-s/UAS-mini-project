@@ -41,5 +41,16 @@ class Saving {
         
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function getTotalSavingsByUser($user_id) {
+        $query = "SELECT SUM(amount) AS total FROM " . $this->table . " WHERE user_id = :user_id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':user_id', $user_id);
+        $stmt->execute();
+        
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result['total'] ?? 0; // Jika tidak ada donasi, kembalikan 0
+    }
+    
     
 }

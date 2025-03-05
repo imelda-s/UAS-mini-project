@@ -25,6 +25,8 @@
     </nav>
 
     <main>
+        <p><strong>Total Saving:</strong> Rp<?php echo number_format($totalDonations); ?></p>
+
         <h2>Recent Saving</h2>
         <?php if(empty($savings)): ?>
             <p>No donations yet.</p>
